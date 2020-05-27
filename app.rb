@@ -14,6 +14,7 @@ class App < Sinatra::Base
   
   post '/puppy' do
     @puppy_data = params
+    
     erb :display_puppy
     binding.pry
   end
